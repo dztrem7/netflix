@@ -1,0 +1,113 @@
+body {
+    background-image: url("../assets/img-fundo.png");
+    background-size: cover;
+    /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+* {
+    font-family: Poppins;
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+}
+
+.home-img {
+    margin-top: 16px;
+    width: 130px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.destaque,
+.cinza {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.cinza {
+    font-weight: 400;
+}
+
+.cinza2 {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(146, 146, 146);
+    margin-top: 0px;
+}
+
+.destaque {
+    font-weight: 300;
+}
+
+.cinza {
+    color: rgb(146, 146, 146);
+    font-weight: 200;
+}
+
+.tres {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-left: 0px;
+    }
+
+    body {
+        background-image: url("../assets/img-mobille.png");
+        height: 100vh;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .home-img {
+        padding-left: 10px;
+        width: 0px;
+    }
+
+    .img-div {
+        background-image: url("../assets/n-meio.png");
+        background-repeat: no-repeat;
+        height: 100px;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+
+    .quadrado {
+        background-image: url("../assets/quadrado.png");
+        background-repeat: no-repeat;
+    }
+
+    .imagens {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tres {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .tres h3 {
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .destaque {
+        display: none;
+    }
+
+    .cinza {
+        display: none;
+    }
+}
